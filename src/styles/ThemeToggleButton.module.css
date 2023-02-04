@@ -1,0 +1,33 @@
+.button {
+  background-color: var(--toggle-button);
+  width: 86px;
+  height: 40px;
+  border-radius: 999px;
+  padding: 0px;
+  position: relative;
+  padding: 2px;
+}
+
+.circle {
+  background-color: #fff;
+  border-radius: 999px;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 16x;
+}
+
+.on {
+  transform: translateX(46px);
+  transition: 0.1s linear;
+}
+
+.off {
+  transform: translateX(0px);
+  transition: 0.1s linear;
+}

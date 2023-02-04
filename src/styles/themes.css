@@ -1,0 +1,19 @@
+.dark {
+  --text-primary: #fff;
+  --text-secondary: #cdcdcd;
+  --text-inactive: #cdcdcda6;
+  --text-link: #8cb4ff;
+  --background-primary: #1b1b1b;
+  --background-secondary: #343434;
+  --toggle-button: #92ec7f;
+}
+
+.light {
+  --text-primary: #1b1b1b;
+  --text-secondary: #4e4e4e;
+  --text-inactive: #9e9e9ea6;
+  --text-link: #0069c2;
+  --background-primary: #fff;
+  --background-secondary: #f9f9fb;
+  --toggle-button: lightgray;
+}
