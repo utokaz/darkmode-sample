@@ -6,6 +6,9 @@
   --background-primary: #1b1b1b;
   --background-secondary: #343434;
   --toggle-button: #92ec7f;
+  --toggle-bg: #061420;
+  --toggle-inactive-bg: #343434;
+  --card-bg: #061420;
 }
 
 .light {
@@ -16,4 +19,7 @@
   --background-primary: #fff;
   --background-secondary: #f9f9fb;
   --toggle-button: lightgray;
+  --toggle-bg: #fff;
+  --toggle-inactive-bg: #eaecef;
+  --card-bg: #f9f9fb;
 }

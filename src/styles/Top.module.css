@@ -1,3 +1,21 @@
 .title {
   color: var(--text-primary);
 }
+
+.search_bar_container {
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card_container {
+  margin: 12px;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  text-align: center;
+}

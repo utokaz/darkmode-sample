@@ -1,0 +1,23 @@
+.search_bar {
+  width: 100%;
+  border: 2px solid lightgray;
+  border-radius: 6px;
+  line-height: 32px;
+  font-size: 20px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--toggle-inactive-bg);
+  color: var(--text-primary);
+}
+
+.search_bar:focus {
+  background-color: var(--toggle-bg);
+}
+
+.search_bar:focus::placeholder {
+  color: transparent;
+}
+
+.input_container {
+  position: relative;
+}
