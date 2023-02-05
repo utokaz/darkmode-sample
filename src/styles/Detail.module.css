@@ -1,0 +1,8 @@
+.title {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.authors {
+  color: var(--text-primary);
+}

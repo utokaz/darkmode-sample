@@ -19,3 +19,15 @@
   grid-row-gap: 20px;
   text-align: center;
 }
+
+.loading_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.more_load_container {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}

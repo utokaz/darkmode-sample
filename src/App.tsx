@@ -7,7 +7,7 @@ import './styles/themes.css'
 function App() {
   const queryClient = new QueryClient({
     defaultOptions: {
-      queries: { refetchOnWindowFocus: false },
+      queries: { refetchOnWindowFocus: false, staleTime: Infinity },
     },
   })
 
