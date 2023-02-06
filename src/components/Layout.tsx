@@ -1,7 +1,9 @@
 import { Suspense } from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
 import { Outlet } from 'react-router-dom'
 import styles from '../styles/Layout.module.css'
 import { ThemeToggleButton } from './ThemeToggleButton'
+import { ErrorDetail } from './ErrorDetail'
 
 export const Layout = () => {
   return (
@@ -11,9 +13,12 @@ export const Layout = () => {
         <div className={styles.spacer}></div>
         <ThemeToggleButton />
       </header>
+
       <main className={styles.main}>
         <Suspense fallback={<p>Loading...</p>}>
-          <Outlet />
+          <ErrorBoundary FallbackComponent={ErrorDetail}>
+            <Outlet />
+          </ErrorBoundary>
         </Suspense>
       </main>
     </div>

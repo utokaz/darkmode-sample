@@ -12,11 +12,11 @@ const Top = () => {
   const [keyword, setKeyword] = useState(params.get('q') ?? '')
 
   const {
-    status,
     data: books,
     error,
     isFetching,
     isLoading,
+    isError,
     refetch,
     fetchNextPage,
   } = useInfiniteQuery({
@@ -37,7 +37,7 @@ const Top = () => {
     refetch()
   }
 
-  if (status === 'error') {
+  if (isError) {
     throw error
   }
 
