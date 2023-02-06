@@ -15,11 +15,11 @@ export const Layout = () => {
       </header>
 
       <main className={styles.main}>
-        <Suspense fallback={<p>Loading...</p>}>
-          <ErrorBoundary FallbackComponent={ErrorDetail}>
+        <ErrorBoundary FallbackComponent={ErrorDetail}>
+          <Suspense fallback={<p>Loading...</p>}>
             <Outlet />
-          </ErrorBoundary>
-        </Suspense>
+          </Suspense>
+        </ErrorBoundary>
       </main>
     </div>
   )
